@@ -1,0 +1,55 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#include "strCode.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+//---------------------------------------------------------------------------
+
+Str::Str()
+{
+	this->size_=1;
+	this->field_=new int [this->size_];
+	for(int i=0;i!=this->size_;i++)
+	{
+		this->field_[i]=0;
+	}
+}
+Str::Str(int size)
+{
+	this->size_=size;
+	this->field_=new int [this->size_];
+	for(int i=0;i!=this->size_;i++)
+	{
+		this->field_[i]=0;
+	}
+}
+Str::~Str()
+{
+	delete[]this->field_;
+}
+int Str::size()
+{
+	return this->size_;
+}
+int Str::reinit()
+{
+	delete[] this->field_;
+	this->size_=1;
+	this->field_=new int[this->size_];
+	for(int i=0;i!=this->size_;i++)
+	{
+		this->field_[i]=0;
+	}
+	return 0;
+}
+int Str::resize(int size)
+{
+	delete[] this->field_;
+	this->size_=size;
+	this->field_=new int[this->size_];
+	for(int i=0;i!=this->size_;i++)
+	{
+		this->field_[i]=0;
+	}
+	return 0;
+}

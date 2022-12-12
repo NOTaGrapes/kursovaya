@@ -1,0 +1,66 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#include "matrixCode.h"
+#include "strCode.h"
+//---------------------------------------------------------------------------
+//#pragma package(smart_init)
+//---------------------------------------------------------------------------
+
+Matrix::Matrix()
+{
+	this->size_=1;
+	this->fields_=new Str[this->size_];
+	for (int i=0;i!=this->size_;i++)
+	{
+		this->fields_[i].resize(this->size_);
+	}
+}
+Matrix::Matrix(int size)
+{
+	this->size_=size;
+	this->fields_=new Str[this->size_];
+	for (int i=0;i!=this->size_;i++)
+	{
+		this->fields_[i].resize(this->size_);
+	}
+}
+Matrix::~Matrix()
+{
+	delete[]this->fields_;
+}
+int Matrix::size()
+{
+	int counter=0;
+	for (int i=0; i!=this->size_; i++)
+	{
+		if (this->fields_[i].size()==this->size_)
+		{
+			counter++;
+		}
+	}
+	if(counter==this->size_)
+	{
+		return counter;
+	}
+	return (-1)*counter;
+}
+int Matrix::reinit()
+{
+	this->size_=1;
+	this->fields_=new Str[this->size_];
+	for (int i=0;i!=this->size_;i++)
+	{
+		this->fields_[i].reinit();
+	}
+	return 0;
+}
+int Matrix::resize(int size)
+{
+	this->size_=size;
+	this->fields_=new Str[this->size_];
+	for (int i=0;i!=this->size_;i++)
+	{
+		this->fields_[i].resize(this->size_);
+	}
+	return 0;
+}

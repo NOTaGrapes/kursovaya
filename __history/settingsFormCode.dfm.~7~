@@ -1,0 +1,31 @@
+object settingsForm: TsettingsForm
+  Left = 0
+  Top = 0
+  Caption = 'settingsForm'
+  ClientHeight = 284
+  ClientWidth = 265
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RadioButton1: TRadioButton
+    Left = 128
+    Top = 104
+    Width = 17
+    Height = 17
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    StyleElements = [seClient, seBorder]
+  end
+end

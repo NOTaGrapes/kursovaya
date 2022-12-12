@@ -1,0 +1,39 @@
+//Created By NOTaGrape
+//---------------------------------------------------------------------------
+#ifndef diffusionCoreCodeH
+#define diffusionCoreCodeH
+//---------------------------------------------------------------------------
+#include <vector>
+#include "irregularFractalCode.h"
+//---------------------------------------------------------------------------
+struct StructPoint
+{
+	int x;		// X координата точки
+	int y;		// Y координата точки
+};
+
+class DiffusionCore
+{
+public:
+	DiffusionCore();
+	DiffusionCore(irregularFractal&,int,int);
+	int reinit(irregularFractal&,int,int);
+
+	int	makeStep(irregularFractal&);
+	int	collisionCheck(irregularFractal&,StructPoint);
+	int borderCheck(StructPoint);
+	StructPoint showPoint();
+	int showIter();
+	StructPoint& operator[](const int index)
+	{
+		return memory_[index];
+	}
+private:
+	std::vector <StructPoint> memory_;
+	int size_;
+	int iter_;
+	StructPoint point_;
+};
+//---------------------------------------------------------------------------
+#endif
+

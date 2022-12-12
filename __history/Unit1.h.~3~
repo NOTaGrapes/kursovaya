@@ -1,0 +1,27 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Menus.hpp>
+//---------------------------------------------------------------------------
+class TmainForm : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MainMenu1;
+	TMenuItem *SettingsString;
+	TMenuItem *FileString;
+	TMenuItem *N2;
+	TMenuItem *ExitString;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TmainForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TmainForm *mainForm;
+//---------------------------------------------------------------------------
+#endif

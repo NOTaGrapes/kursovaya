@@ -1,0 +1,14 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#include "serpinskyCarpetCode.h"
+#include <vector>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+//---------------------------------------------------------------------------
+SerpinskyCarpet::SerpinskyCarpet()
+{
+	this->sizeX_=0;
+	this->sizeY_=0;
+	this->iterations_=0;
+    this->carpetMatrix.clear();
+}

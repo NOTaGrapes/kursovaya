@@ -1,0 +1,35 @@
+//---------------------------------------------------------------------------
+
+#ifndef settingsFormCodeH
+#define settingsFormCodeH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.WinXCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TsettingsForm : public TForm
+{
+__published:	// IDE-managed Components
+	TRadioButton *rbNothWest;
+	TGroupBox *GroupBox1;
+	TRadioButton *rbNorth;
+	TRadioButton *rbNorthEast;
+	TRadioButton *rbMiddle;
+	TRadioButton *rbEast;
+	TRadioButton *rbWest;
+	TRadioButton *rbSouthEast;
+	TRadioButton *rbSouth;
+	TRadioButton *rbSouthWest;
+	TRadioButton *rbRandom;
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TsettingsForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TsettingsForm *settingsForm;
+//---------------------------------------------------------------------------
+#endif

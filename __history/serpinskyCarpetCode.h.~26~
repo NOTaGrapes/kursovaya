@@ -1,0 +1,30 @@
+//---------------------------------------------------------------------------
+#ifndef serpinskyCarpetCodeH
+#define serpinskyCarpetCodeH
+//---------------------------------------------------------------------------
+#include "matrixCode.h"
+//---------------------------------------------------------------------------
+class SerpinskyCarpet
+{
+public:
+	//basic func's
+	SerpinskyCarpet();
+	~SerpinskyCarpet();
+
+    //additional func's
+	int reinit();
+        int reinit(int,int,int);
+	int changeValue(char*);
+	int showValue(char*);
+    	int calcPart(int,int);
+
+	//visible variables
+        Matrix carpet;
+
+private:
+        int size_;
+
+
+};
+//---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,42 @@
+//Created By NOTaGrape
+//---------------------------------------------------------------------------
+#include "memoryCode.h"
+#include "matrixCode.h"
+//---------------------------------------------------------------------------
+ Memory::Memory()
+{
+	fields_.resize(1);
+	for (int i=0;i!= fields_.size();i++)
+	{
+		fields_[i].resize(1);
+	}
+}
+Memory::Memory(int size)
+{
+	fields_.resize(size);
+	for (int i=0;i!= fields_.size();i++)
+	{
+		fields_[i].resize(size);
+	}
+}
+int Memory::size()
+{
+	return  fields_.size();
+}
+int Memory::resize(int size)
+{
+	fields_.resize(size);
+	for (int i=0;i!= fields_.size();i++)
+	{
+		fields_[i].resize(size);
+	}
+	return 0;
+}
+
+int Memory::add()
+{
+	int curPos = size();
+	resize(curPos+1);
+
+	return 0;
+}

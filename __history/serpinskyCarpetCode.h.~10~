@@ -1,0 +1,26 @@
+//---------------------------------------------------------------------------
+#ifndef serpinskyCarpetCodeH
+#define serpinskyCarpetCodeH
+//---------------------------------------------------------------------------
+class SerpinskyCarpet
+{
+public:
+	//basic func's
+	SerpinskyCarpet();
+	~SerpinskyCarpet();
+
+    //additional func's
+	int reinit();
+	int	changeValue(char*);
+	int showValue(char*);
+
+	//visible variables
+	std::vector <vector<int>> carpetMatrix;
+
+private:
+	int sizeX_;
+	int sizeY_;
+	int iterations_;
+
+};
+#endif

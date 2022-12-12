@@ -1,0 +1,32 @@
+//---------------------------------------------------------------------------
+#include "randomizerCode.h"
+#include <random>
+#include <cmath>
+#include <iostream>
+//---------------------------------------------------------------------------
+
+int randomizer(int first,int last)
+{
+	int size = abs(first-last)+1;
+	if(size>1)
+	{
+		int* answers = new int[size];
+		for (int i=0; i!=size; i++)
+		{
+			answers[i]=first+i;
+			
+		}
+		return (int)answers[rand() % size];
+	}
+	if (size==1)
+	{
+		return first;
+	}
+	return 1;
+}
+int randomizerSteps()
+{
+	int answer[2]={-1,1};
+	return answer[rand() % 2];
+}
+//---------------------------------------------------------------------------

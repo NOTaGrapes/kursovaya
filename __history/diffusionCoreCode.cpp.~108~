@@ -1,0 +1,223 @@
+//Created By NOTaGrape
+//---------------------------------------------------------------------------
+#include "diffusionCoreCode.h"
+#include "randomizerCode.h"
+#include "irregularFractalCode.h"
+//---------------------------------------------------------------------------
+DiffusionCore::DiffusionCore()
+{
+	point_.x=0;
+	point_.y=0;
+	sizeGrid_=600;
+	iterSubSteps_=0;
+	sizeSubSteps_=1000;
+	iterMainSteps_=0;
+	sizeMainSteps_=10000;
+	memory_.clear();
+	for(int i=0;i!=sizeSubSteps_;i++)
+	{
+		memory_.push_back(0);
+	}
+	poses_.clear();
+	poses_.push_back(point_);
+}
+DiffusionCore::DiffusionCore(irregularFractal& fractalGrid,int posX, int posY)
+{
+	point_.x=posX;
+	point_.y=posY;
+	sizeGrid_=fractalGrid.size();
+	iterSubSteps_=0;
+	sizeSubSteps_=1000;
+	iterMainSteps_=0;
+	sizeMainSteps_=10000;
+	point_=startCheck(fractalGrid,point_,sizeGrid_);
+	memory_.clear();
+	for(int i=0;i!=sizeSubSteps_;i++)
+	{
+		memory_.push_back(0);
+	}
+	poses_.clear();
+	poses_.push_back(point_);
+}
+int DiffusionCore::reinit(irregularFractal& fractalGrid,int posX, int posY)
+{
+	point_.x=posX;
+	point_.y=posY;
+	sizeGrid_=fractalGrid.size();
+	iterSubSteps_=0;
+	sizeSubSteps_=1000;
+	iterMainSteps_=0;
+	sizeMainSteps_=10000;
+	//point_=startCheck(fractalGrid,point_,sizeGrid_);
+	memory_.clear();
+	for(int i=0;i!=sizeSubSteps_;i++)
+	{
+		memory_.push_back(0);
+	}
+	poses_.clear();
+	poses_.push_back(point_);
+	return 0;
+}
+
+int DiffusionCore::makeSubStep(irregularFractal& fractalGrid)
+{
+	////////////////////////////////////////////////////////////////////////////
+	//
+	//              2#
+	//               |
+	//               |
+	//               |
+	//               |         3
+	//	   #---------#---------#
+	//     1         |
+	//               |
+	//               |
+	//				 |
+	//               #4
+	//
+	////////////////////////////////////////////////////////////////////////////
+	StructPoint newPoint;
+	bool clearStep = false;
+	int dirrection;
+	while(!clearStep)
+	{
+		newPoint.x=point_.x;
+		newPoint.y=point_.y;
+		dirrection=randomizer(1,4);
+		if(dirrection==1)
+		{
+			newPoint.x-=1;
+		}
+		if(dirrection==2)
+		{
+			newPoint.y+=1;
+		}
+		if(dirrection==3)
+		{
+			newPoint.x+=1;
+		}
+		if(dirrection==4)
+		{
+			newPoint.y-=1;
+		}
+		if(collisionCheck(fractalGrid,newPoint)==0)
+		{
+			clearStep = true;
+		}
+	}
+	point_=newPoint;
+	memory_[iterSubSteps_]+=(point_.x*point_.x)+(point_.y*point_.y);
+	poses_.push_back(point_);
+	iterSubSteps_++;
+	return 0;
+}
+
+int DiffusionCore::makeMainStep(irregularFractal& fractalGrid)
+{
+	poses_.clear();
+	StructPoint slavePoint=point_;
+	for(int i=0;i!=sizeSubSteps_;i++)
+	{
+		makeSubStep(fractalGrid);
+	}
+	iterSubSteps_=0;
+	point_= slavePoint;
+	iterMainSteps_++;
+	return 0;
+}
+
+StructPoint	DiffusionCore::startCheck(irregularFractal& fractalGrid,StructPoint pointStart, int maxSize)
+{
+        bool isStart=false;
+        if(fractalGrid.carpet[pointStart.x][pointStart.y]==0)
+        {
+                isStart=true;
+                return pointStart;
+        }
+        else
+        {
+            for(int i=pointStart.x+1;i!=maxSize;i++)
+            {
+                for (int j=pointStart.y+1; j!=maxSize; j++)
+                {
+                        if(fractalGrid.carpet[i][j]==0)
+                        {
+                            isStart=true;
+                            pointStart.x=i;
+                            pointStart.y=j;
+                        }
+                }
+            }
+        }
+
+}
+int DiffusionCore::collisionCheck(irregularFractal& fractalGrid,StructPoint pointModed)
+{
+	if(borderCheck(pointModed)==0)
+	{
+		if(fractalGrid.carpet[pointModed.x][pointModed.y]==1)
+		{
+			return 1;
+		}
+		return 0;
+	}
+	else
+	{
+		return 1;
+	}
+}
+int DiffusionCore::borderCheck(StructPoint pointModed)
+{
+	if (pointModed.x<0)
+	{
+		return 1;
+	}
+	if (pointModed.x>sizeGrid_)
+	{
+		return 1;
+	}
+	if (pointModed.y<0)
+	{
+		return 1;
+	}
+	if (pointModed.y>sizeGrid_)
+	{
+		return 1;
+	}
+	return 0;
+}
+
+int DiffusionCore::showIterMain()
+{
+	return iterMainSteps_;
+}
+int DiffusionCore::showIterSub()
+{
+	return iterSubSteps_;
+}
+int DiffusionCore::preproduction()
+{
+	for (int i=0; i !=sizeSubSteps_; i++)
+	{
+		memory_[i]=memory_[i]/sizeMainSteps_;
+	}
+	return 0;
+}
+double DiffusionCore::showMemoryRecord(int index)
+{
+	return memory_[index];
+}
+StructPoint DiffusionCore::showPosesRecord(int index)
+{
+	return poses_[index];
+}
+
+StructPoint DiffusionCore::showPoint()
+{
+	return point_;
+}
+int DiffusionCore::changeSubSize(int newSubSize)
+{
+	sizeSubSteps_=newSubSize;
+	return 0;
+}

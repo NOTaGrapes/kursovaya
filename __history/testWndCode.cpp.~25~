@@ -1,0 +1,48 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "testWndCode.h"
+//my additional classes
+#include "serpinskyCarpetCode.h"
+#include "matrixCode.h"
+#include "strCode.h"
+#include "randomizerCode.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TtestWnd *testWnd;
+SerpinskyCarpet testCarpet;
+//---------------------------------------------------------------------------
+__fastcall TtestWnd::TtestWnd(TComponent* Owner)
+	: TForm(Owner)
+{
+	testPaintBox->Canvas->CleanupInstance;
+	testPaintBox->Canvas->Brush->Color=clBlack;
+	testPaintBox->Canvas->FillRect(Rect(0,0,600,600));
+        testCarpet.changeValue("size",600);
+        testCarpet.changeValue("iterations",1);
+        testCarpet.Rreinit(600,1)
+}
+//---------------------------------------------------------------------------
+void __fastcall TtestWnd::testButtonClick(TObject *Sender)
+{
+    	testPaintBox->Canvas->CleanupInstance;
+        testPaintBox->Canvas->Brush->Color=clWhite;
+        testPaintBox->Canvas->Pen->Color=clWhite;
+       // testCarpet.calcStart();
+        for(int n=0;n!=10;n++)
+        {
+                for(int m=0;m!=10;m++)
+        	{
+                	if(testCarpet.matrixCarpet[n][m]==1)
+                        {
+                        	//testPaintBox->Canvas->MoveTo(n,m);
+                               // testPaintBox->Canvas->LineTo(n,m);
+                        }
+
+        	}
+        }
+}
+//---------------------------------------------------------------------------

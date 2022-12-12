@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.974,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\outputPictureCode.h=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.225,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.h=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\testWndCode.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.817,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.h=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\serpinskyCarpetCode.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.087,D:\files\pictures\my art\ico\graph_cpp.ico=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.778,=D:\files\pictures\my art\ico\graph_cpp.ico</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.240,D:\files\Документы\Embarcadero\Studio\Projects\Project1.cbproj=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.148,D:\files\pictures\my art\ico\graph_cpp32.ico=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.787,=D:\files\pictures\my art\ico\graph_cpp32.ico</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.572,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\graph_cpp.ico</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.152,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.h=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\matrixCode.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.336,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.h=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\mainFormCode.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.805,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\findCoffCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.591,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit2.dfm=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\settingsFormCode.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.375,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\irregularFractalCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.014,D:\files\Документы\Embarcadero\Studio\Projects\Unit1.h=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.336,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.dfm=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\mainFormCode.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.225,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.dfm=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\testWndCode.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.014,D:\files\Документы\Embarcadero\Studio\Projects\Unit1.dfm=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.090,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Project1.cbproj=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\stohastic.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.084,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\strCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.162,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\diffusionCore.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.675,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\graph_cpp32.ico</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.355,D:\!BSU\Курсовые\Курсовая работа 2\Prog\kursovaya\Unit1.h=D:\!BSU\Курсовые\Курсовая работа 2\Prog\kursovaya\memoryFractals.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.080,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Project1PCH1.h=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\stohasticPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.520,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\diffusionCoreCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.841,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\serpinskyCarpetCode.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.129,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\randomizerCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.014,D:\files\Документы\Embarcadero\Studio\Projects\Unit1.cpp=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.419,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\diffusionTestCoreCode.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.872,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\diffusionTestCoreCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.837,D:\files\Документы\Embarcadero\Studio\Projects\Project1PCH1.h=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.583,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.591,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit2.cpp=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\settingsFormCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.974,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\outputPictureCode.cpp=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.583,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\outputPictureCode.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.874,=D:\files\Документы\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.995,=D:\files\Документы\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.916,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.504,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.817,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\serpinskyCarpetCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.591,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit2.h=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\settingsFormCode.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.546,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.231,=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.225,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\testWndCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.355,D:\!BSU\Курсовые\Курсовая работа 2\Prog\kursovaya\Unit1.cpp=D:\!BSU\Курсовые\Курсовая работа 2\Prog\kursovaya\memoryFractals.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.587,=D:\!BSU\Курсовые\Курсовая работа 2\Prog\kursovaya\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.336,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\mainFormCode.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.152,D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\Unit1.cpp=D:\files\Документы\Embarcadero\Studio\Projects\kursovaya\matrixCode.cpp</Transaction>
+    <Transaction>2020.05.29 01:27:44.834,D:\!BSU\Курсовые\Курсовая работа 2\Prog\kursovaya\memoryCode.cpp=D:\!BSU\Курсовые\Курсовая работа 2\Prog\kursovaya\memoryFractals.cpp</Transaction>
+    <Transaction>2020.05.29 01:27:44.834,D:\!BSU\Курсовые\Курсовая работа 2\Prog\kursovaya\memoryCode.h=D:\!BSU\Курсовые\Курсовая работа 2\Prog\kursovaya\memoryFractals.h</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

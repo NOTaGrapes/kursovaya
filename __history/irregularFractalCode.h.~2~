@@ -1,0 +1,30 @@
+//Created By NOTaGrape
+//---------------------------------------------------------------------------
+#ifndef irregularFractalCodeH
+#define irregularFractalCodeH
+//---------------------------------------------------------------------------
+#include "matrixCode.h"
+//---------------------------------------------------------------------------
+class irregularFractal
+{
+public:
+	//basic func's
+	irregularFractal();
+	irregularFractal(int,int);
+	//additional func's
+	int reinit(int,int);
+	int size();
+	int cut(int,int,int,int);
+	int calcPartReg(int,int,int,int,int);
+	int calcPart(int,int,int,int,int);
+	int calcStartReg();
+	int calcStart();
+	double boxCount();
+	//visible fields
+	Matrix carpet;
+private:
+	int iter_;
+
+};
+//---------------------------------------------------------------------------
+#endif
